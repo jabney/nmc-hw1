@@ -103,3 +103,4 @@ Negative bear (looks better on dark backgrounds)
 - Header `shift` (number): The amount to shift the cipher.
 - POST body (string): The message to encrypt. Any character of the message that's a standard keyboard character will be encrypted.
 
+**Note:** Backslash and double-quote characters are escaped in the output due to JSON encoding. Replace `\\` with `\` and `\"` with `"` when using cipher text as input in the POST body.
