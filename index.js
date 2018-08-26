@@ -115,8 +115,11 @@ handlers.caesar = (data, callback) => {
   // Get the message to encrypt.
   const message = data.payload
 
+  // Help message for GET requests or incomplete POST requests.
+  const help = 'Make a POST request. Include a message in the POST body and a "shift" header with a numeric value.'
+
   // Create the payload container.
-  const payload = { message: message || 'no message given' }
+  const payload = { message: message || help }
 
   // If there's a message and a proper shift number, encrypt.
   if (message && !isNaN(shift)) {
