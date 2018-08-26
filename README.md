@@ -6,7 +6,10 @@
 
 Returns two ascii bear images, one _positive_ and one _negative_.
 
-Positive bear (looks better on light backgrounds)
+### Positive bear
+
+(looks better on light backgrounds)
+
 ```
 
                                 .::vvvvvvvv:.  .:vvv1v::.....
@@ -50,7 +53,9 @@ Positive bear (looks better on light backgrounds)
  .. ....::v::v:...:.:v11vv:.:1vvvvv11v:vvvv.:v.   v811881888881v:::............
 ```
 
-Negative bear (looks better on dark backgrounds)
+### Negative bear
+
+(looks better on dark backgrounds)
 
 ```
 
@@ -97,9 +102,9 @@ Negative bear (looks better on dark backgrounds)
 
 ## Caesar Route
 
-`http://locahost:4000/hello`
+`http://locahost:4000/caesar`
 
-(POST) Returns a 95 character Caesar shift encryption of the POST body.
+(POST) Returns a 95-character Caesar shift encryption of the POST body.
 - Header `shift` (number): The amount to shift the cipher.
 - POST body (string): The message to encrypt. Any character of the message that's a standard keyboard character will be encrypted.
 
